@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>تغيير قطع المركبة</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body dir="rtl" class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-4">تغيير قطع للمركبة</h1>
+    <form id="partForm" class="bg-white p-4 rounded shadow-sm mb-4">
+      <div class="mb-3">
+        <label for="partName" class="form-label">اسم القطعة:</label>
+        <input type="text" id="partName" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="changeDate" class="form-label">تاريخ التغيير:</label>
+        <input type="date" id="changeDate" class="form-control" required />
+      </div>
+      <button type="submit" class="btn btn-success">حفظ</button>
+      <a href="#" id="backBtn" class="btn btn-secondary ms-2">رجوع</a>
+    </form>
+
+    <h3>سجل القطع:</h3>
+    <ul id="partsList" class="list-group"></ul>
+  </div>
+
+  <script src="js/parts.js"></script>
+</body>
+</html>
+
+
